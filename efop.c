@@ -6,7 +6,7 @@
    And also recent kernels default with CONFIG_STRICT_RWX Which will not allow page attributes change. 
 
    Module: efop.c
-   Test Steps: compile, load, dmesg, echo "HI" > nagesh, dmesg. Chk printk in dmesg and /var/log/system.log
+   Test Steps: compile, insmod, dmesg, echo "HI" > nagesh, dmesg. Chk printk in dmesg and /var/log/system.log
 *************************************************************************************************************/
 
 #include <linux/module.h>    
