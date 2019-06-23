@@ -3,7 +3,7 @@
    This module Demo for dynamic listing FS in UBUNTU kernel 3.13.0-32 and 3.13.11.
 
    Module: fsls.c
-   Test Steps: compile, load, dmesg . Chk printk in dmesg and /var/log/system.log
+   Test Steps: compile, insmod, dmesg . Chk printk in dmesg and /var/log/system.log
 *************************************************************************************************************/
 
 #include <linux/module.h>    
