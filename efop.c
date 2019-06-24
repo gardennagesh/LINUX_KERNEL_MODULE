@@ -1,6 +1,6 @@
 /*************************************************************************************************************
    Kernel samples by Nagesh N.
-   This module Demo for dynamically override ext4 write operation in UBUNTU Kernel 3.13.11.
+   This module Demo for dynamically override ext4 write operation. Kernel 3.13.11 .
    I recompiled the kerenel by taking out constant qualifier for file_operations of ext4.
    You could do RW pages, using set_memory_rw , which allow pages to do rw. 
    And also recent kernels default with CONFIG_STRICT_RWX Which will not allow page attributes change. 
