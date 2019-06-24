@@ -41,9 +41,9 @@ static fops fp;
 static ssize_t _write(struct file *filp, const char __user *buf, size_t len, loff_t *ppos) {
 
 	if ( !strcmp(filp->f_path.dentry->d_name.name , "nagesh"))  {
-	    printk("nagesh_file_not_written\n");
+	    printk("nagesh\n");
 	    printk("...................\n");
-            return -EINVAL;
+            
         }
 	    return owrite(filp, buf, len, ppos); 
 }
@@ -53,9 +53,9 @@ struct file *filp;
 
             filp = iocb->ki_filp;
 	    if ( !strcmp(filp->f_path.dentry->d_name.name , "nagesh"))  {
-	        printk("aio.nagesh_file_not_written\n");
+	        printk("nagesh\n");
 	        printk("...................\n");
-                return -EINVAL;
+                
             }
             return oaio_write(iocb,  iov,  nr_segs, pos);
 }
