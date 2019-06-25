@@ -1,11 +1,12 @@
 /*************************************************************************************************************
-   Kernel samples by Nagesh N.
+   Kernel module samples by Nagesh N.
    This module is DEMO for dynamically override file operation. Kernel 3.13.11 .
-   I recompiled the kerenel by taking out constant qualifier for file operations.
-   You could do RW pages, using set_memory_rw , which allow pages to do rw. 
+   I could do RW pages, using set_memory_rw , which allow pages to do rw. 
+   But, I recompiled the kerenel by taking out constant qualifier for file operations.
+   Refgerences : Online kernel documentation, Kernel source code . Books on Kernel programming. 
    And also recent kernels default with CONFIG_STRICT_RWX Which will not allow page attributes change. 
 
-   Module: efop.c
+   Kernel Module Name: efop.c
    Test Steps: compile, insmod, dmesg, echo "HI" > nagesh, dmesg. Chk printk in dmesg and /var/log/system.log
 *************************************************************************************************************/
 
